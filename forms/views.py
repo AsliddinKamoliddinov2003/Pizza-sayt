@@ -78,3 +78,68 @@ def delete(request,pk):
     except Product.DoesNotExist:
         pass
     return redirect(reverse("product-list"))
+
+
+
+def category(request):
+    categories = Category.objects.all()
+    context = {
+        "categories": categories
+    }
+
+    return render(request, "category_list.html", context)
+
+
+def create_category(request):
+    if request.method == "POST":
+        name = request.POST.get("name", None)
+
+        category = Category()
+        category.name = name
+
+        category.save()
+
+        return redirect(reverse("category-list"))
+
+    categories = Category.objects.all()
+    context = {
+            "categories": categories
+    }
+    
+    return render(request, 'create_category.html', context)
+
+
+def update_category(request, pk):
+    category = Category.objects.filter(id=pk)
+
+    if not category.exists():
+        return redirect(reverse("bosh-sahifa"))
+    else:
+        category=category.first()
+
+    if request.method == "POST":
+        name = request.POST.get("name", None)
+
+        category.name = name
+
+        category.save()
+
+        return redirect(reverse("category-list"))
+
+    categories = Category.objects.all()
+    context = {
+            "categories": categories,
+            "category":category
+    }
+    
+    return render(request, 'update_category.html', context)
+    
+    
+def delete_category(request, pk):
+    try:
+        category=Category.objects.get(id=pk)
+        category.delete()
+    except Category.DoesNotExist:
+        pass
+    return redirect(reverse('category-list'))
+

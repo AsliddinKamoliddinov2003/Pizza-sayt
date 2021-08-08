@@ -35,9 +35,6 @@
                     </li>
                 </ul>
             </div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'create-category' %}">Add Category</a>
-                    </li>
         </div>
 
     </nav>  
@@ -49,27 +46,23 @@
         <thead>
             <tr style="text-align: center;">
                 <th scope="col">ID</th>
-                <th scope="col">Title</th>
-                <th scope="col">Description</th>
                 <th scope="col">Category</th>
                 <th scope="col"></th>
                 <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
-            {% for product in products %}
+            {% for cat in categories %}
                 <tr style="text-align: center;">
-                    <th scope="row">{{product.id}}</th>
-                    <td>{{product.title|truncatechars:20}}</td>
-                    <td>{{product.description|truncatechars:40}}</td>
-                    <td>{{product.category}}</td>
+                    <th scope="row">{{cat.id}}</th>
+                    <td>{{cat.name}}</td>
                     <td>
-                        <a href="{% url 'product-update' pk=product.id %}" class="btn btn-info btn-sm">
+                        <a href="{% url 'update-category' pk=cat.id %}" class="btn btn-info btn-sm">
                             Update
                         </a>
                     </td>
                     <td>
-                        <a href="{% url 'product-delete' pk=product.id %}" class="btn btn-danger btn-sm">Delete</a>
+                        <a href="{% url 'delete-category' pk=cat.id %}" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
             {% endfor %}

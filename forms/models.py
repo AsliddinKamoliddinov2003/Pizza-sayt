@@ -9,6 +9,7 @@ class Category(models.Model):
     
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    icon = models.ImageField(upload_to = "images/", null=True)
 
 
     def __str__(self):
@@ -18,7 +19,7 @@ class Category(models.Model):
 class Product(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField(upload_to = "images/")
+    image = models.ImageField(upload_to = "images/", null=True)
       
 
     category = models.ForeignKey(Category, on_delete=models.CASCADE)

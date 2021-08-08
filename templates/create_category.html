@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Add product</title>
+    <title>Add Category</title>
     <style>
         table, tr, td{
             border: 1px solid black;
@@ -29,11 +29,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'create-category' %}">Add Category</a>
-                    </li>
-                </ul>
             </div>
         </div>
 
@@ -44,26 +39,12 @@
 <div class="container">
     <div class="row mt-4">
         <div class="col-10 offset-1">
-            <h3>Add product</h3>
+            <h3>Add Category</h3>
             <form action=""  method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="input-group mb-3 mt-3">
-                <input type="text" name="title" placeholder="Title"/>
-            </div>
-            <div class="input-group mb-3">
-                <div class="form-floating">
-                    <textarea cols="30" rows="10" name="description"></textarea>
-                </div>
-            </div>
-            <div class="input-group mb-3 ">
-            <select class="form-select" name="category_id" >
-                    <option  disabled>Kategoriyani tanlang</option>
-                {% for cat in categories %}
-                    <option value="{{cat.id}}">{{cat.name}}</option>
-                {% endfor %}
-            </select>
-            </div>
-            
+                <input type="text" name="name" placeholder="name"/>
+            </div>            
             <input type="submit" class="btn btn-outline-success" value="Save">
             <input type="reset" class="btn btn-outline-info" value="Cancel">
         </form>
