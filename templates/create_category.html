@@ -42,9 +42,7 @@
             <h3>Add Category</h3>
             <form action=""  method="POST" enctype="multipart/form-data">
             {% csrf_token %}
-            <div class="input-group mb-3 mt-3">
-                <input type="text" name="name" placeholder="name"/>
-            </div>            
+            {{form.as_p}}          
             <input type="submit" class="btn btn-outline-success" value="Save">
             <input type="reset" class="btn btn-outline-info" value="Cancel">
         </form>

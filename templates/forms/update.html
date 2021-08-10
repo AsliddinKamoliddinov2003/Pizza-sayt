@@ -47,28 +47,7 @@
             <h3>Update product</h3>
             <form action=""  method="POST" enctype="multipart/form-data">
             {% csrf_token %}
-            <div class="input-group mb-3 mt-3">
-                <input type="text" name="title" placeholder="Title" value="{{product.title}}"/>
-            </div>
-            <div class="input-group mb-3">
-                <div class="form-floating">
-                    <textarea cols="30" rows="10" name="description">{{product.description}}</textarea>
-                </div>
-            </div>
-            <div class="input-group mb-3 ">
-            <select class="form-select" name="category_id" required>
-                <option  value="">Kategoriyani tanlang</option>
-                {% for cat in categories %}
-                    {% if product.category == category %}
-                        <option value="{{cat.id}}" selected>{{cat.name}}</option>
-                    {% else %}
-                        <option value="{{cat.id}}" >{{cat.name}}</option>
-                    {% endif %}
-                {% endfor %}
-
-            </select>
-            </div>
-            
+            {{form.as_p}}
             <input type="submit" class="btn btn-outline-success" value="Save">
             <input type="reset" class="btn btn-outline-info" value="Cancel">
         </form>

@@ -1,8 +1,10 @@
+from forms.forms import ProductForm
 from django.shortcuts import redirect, render
 from django.urls import reverse
 
 
 from .models import Product, Category
+from .forms import *
 
 
 def list(request):
@@ -15,29 +17,22 @@ def list(request):
 
 
 def create(request):
+    form = ProductForm()
+
     if request.method == "POST":
-        title = request.POST.get("title", None)
-        description = request.POST.get("description", None)
-        category_id = request.POST.get("category_id", None)
-    
-        category = Category.objects.get(id=category_id)
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse("product-list"))
+        
 
-        p = Product()
-        p.title = title
-        p.description = description
-        p.category = category
 
-        p.save()
-
-        return redirect(reverse("product-list"))
-
-    categories = Category.objects.all()
     context = {
-        "categories": categories
+        "form":form
     }
 
-
     return render(request, "forms/create.html", context)
+
 
 
 def update(request, pk):
@@ -48,25 +43,18 @@ def update(request, pk):
     else:
         product=product.first()
 
+    form = ProductForm(instance=product)
+
     if request.method == "POST":
-        title = request.POST.get("title", None)
-        description = request.POST.get("description", None)
-        category_id = request.POST.get("category_id", None)
-    
-        category = Category.objects.get(id=category_id)
-        
-        product.title = title
-        product.description = description
-        product.category = category
+        product = ProductForm(request.POST, request.FILES, instance = product)
+        if product.is_valid():
+            product.save()
+            return redirect(reverse("product-list"))
 
-        product.save()
+       
 
-        return redirect(reverse("product-list"))
-
-    categories = Category.objects.all()
     context = {
-        "categories": categories,
-        "product":product
+        "form":form
     }
     return render(request, "forms/update.html", context)
 
@@ -91,22 +79,20 @@ def category(request):
 
 
 def create_category(request):
+    form = CategoryForm()
     if request.method == "POST":
-        name = request.POST.get("name", None)
-
-        category = Category()
-        category.name = name
-
-        category.save()
-
-        return redirect(reverse("category-list"))
-
-    categories = Category.objects.all()
+        form = CategoryForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse("category-list"))
+        
     context = {
-            "categories": categories
+            "form": form
     }
     
     return render(request, 'create_category.html', context)
+        
+
 
 
 def update_category(request, pk):
@@ -117,19 +103,16 @@ def update_category(request, pk):
     else:
         category=category.first()
 
+    form = CategoryForm(instance=category)
+
     if request.method == "POST":
-        name = request.POST.get("name", None)
-
-        category.name = name
-
-        category.save()
-
-        return redirect(reverse("category-list"))
-
-    categories = Category.objects.all()
+        category = CategoryForm(request.POST, request.FILES, instance=category)
+        if category.is_valid():
+            category.save()
+            return redirect(reverse("category-list"))
+    
     context = {
-            "categories": categories,
-            "category":category
+        "form":form
     }
     
     return render(request, 'update_category.html', context)

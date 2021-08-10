@@ -41,32 +41,23 @@
 
 
 
-<div class="container">
-    <div class="row mt-4">
-        <div class="col-10 offset-1">
-            <h3>Add product</h3>
-            <form action=""  method="POST" enctype="multipart/form-data">
-            {% csrf_token %}
-            <div class="input-group mb-3 mt-3">
-                <input type="text" name="title" placeholder="Title"/>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-10 offset-1">
+                <h3>Add product</h3>
+                <form action=""  method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" class="btn btn-outline-success" value="Save">
+                <input type="reset" class="btn btn-outline-info" value="Cancel">
+            </form>
             </div>
-            <div class="input-group mb-3">
-                <div class="form-floating">
-                    <textarea cols="30" rows="10" name="description"></textarea>
-                </div>
-            </div>
-            <div class="input-group mb-3 ">
-            <select class="form-select" name="category_id" >
-                    <option  disabled>Kategoriyani tanlang</option>
-                {% for cat in categories %}
-                    <option value="{{cat.id}}">{{cat.name}}</option>
-                {% endfor %}
-            </select>
-            </div>
-            
-            <input type="submit" class="btn btn-outline-success" value="Save">
-            <input type="reset" class="btn btn-outline-info" value="Cancel">
-        </form>
         </div>
     </div>
-</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+
+
+  
