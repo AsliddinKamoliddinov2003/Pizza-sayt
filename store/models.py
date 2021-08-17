@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.fields import CharField
 
 
 class User(models.Model):
@@ -8,3 +9,5 @@ class User(models.Model):
     client = models.BooleanField()
     admin = models.BooleanField()
     super_admin = models.BooleanField()
+
+

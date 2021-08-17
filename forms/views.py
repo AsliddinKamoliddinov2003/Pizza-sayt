@@ -1,3 +1,4 @@
+from django.core.files.base import ContentFile
 from forms.forms import ProductForm
 from django.shortcuts import redirect, render
 from django.urls import reverse
@@ -34,8 +35,8 @@ def create(request):
     return render(request, "forms/create.html", context)
 
 
-
 def update(request, pk):
+
     product = Product.objects.filter(id=pk)
 
     if not product.exists():
@@ -68,8 +69,8 @@ def delete(request,pk):
     return redirect(reverse("product-list"))
 
 
-
 def category(request):
+
     categories = Category.objects.all()
     context = {
         "categories": categories
@@ -91,11 +92,10 @@ def create_category(request):
     }
     
     return render(request, 'create_category.html', context)
-        
-
 
 
 def update_category(request, pk):
+
     category = Category.objects.filter(id=pk)
 
     if not category.exists():
@@ -125,4 +125,24 @@ def delete_category(request, pk):
     except Category.DoesNotExist:
         pass
     return redirect(reverse('category-list'))
+
+
+# def home(request):
+#     actors = Movie.objects.all()
+#     context = {
+#         "actors":actors
+#     }
+#     return render(request, "forms/home.html", context)
+
+
+# def create_actor(request):
+#     return 
+
+
+# def update_actor(request, pk):
+#     return
+
+
+# def delete_actor(request, pk):
+#     return
 
