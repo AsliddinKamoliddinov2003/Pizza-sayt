@@ -2,7 +2,7 @@ from django import forms
 from django.db.models import fields
 
 
-from .models import *
+from .models import Product, Category
 
 
 class ProductForm(forms.ModelForm):
@@ -26,7 +26,7 @@ class CategoryForm(forms.ModelForm):
         fields = "__all__"
 
         def __init__(self, *args, **kwargs):
-            super(ProductForm,self).__init__(*args, **kwargs)
+            super(CategoryForm,self).__init__(*args, **kwargs)
 
 
             for field in self.fields:

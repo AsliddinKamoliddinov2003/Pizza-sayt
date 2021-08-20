@@ -108,15 +108,18 @@
 					<hr>
 				</div>
 				{% for cat in categories %}
-					<div class="col-md-4 col-sm-4" >
-						<div class="gallery-wrapper">
-							<img src="{% get_media_prefix %}{{cat.icon}}" class="img-responsive gallery-img" alt="">
-							<div class="gallery-des">
-								<h3>{{cat.name}}</h3>
-								<h5>Cras in ante mattis, elementum nunc sed.</h5>
-							</div>
-						</div>
-					</div>	
+					<form method="POST">
+						<div class="col-md-4 col-sm-4" >
+							<a href="{% url 'all-product' category_slug=cat.slug %}">							
+								<div class="gallery-wrapper">
+									<img src="{% get_media_prefix %}{{cat.icon}}" class="img-responsive gallery-img" alt="">
+									<div class="gallery-des">
+										<a href="{% url 'all-product' category_slug=cat.slug %}"><h3>{{cat.name}}</h3></a>
+									</div>
+								</div>
+							</a>
+						</div>	
+					</form>
 				{% endfor %}			
 			</div>
 		</div>

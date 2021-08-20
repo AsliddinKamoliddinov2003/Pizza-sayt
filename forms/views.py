@@ -76,7 +76,7 @@ def category(request):
         "categories": categories
     }
 
-    return render(request, "category_list.html", context)
+    return render(request, "forms/category_list.html", context)
 
 
 def create_category(request):
@@ -91,7 +91,7 @@ def create_category(request):
             "form": form
     }
     
-    return render(request, 'create_category.html', context)
+    return render(request, 'forms/create_category.html', context)
 
 
 def update_category(request, pk):
@@ -115,7 +115,7 @@ def update_category(request, pk):
         "form":form
     }
     
-    return render(request, 'update_category.html', context)
+    return render(request, 'forms/update_category.html', context)
     
     
 def delete_category(request, pk):

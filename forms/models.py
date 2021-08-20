@@ -1,10 +1,12 @@
 from django.db import models
+from django.db.models.fields import CharField
 
 
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
-    icon = models.ImageField(upload_to = "images/", null=True)
+    icon = models.ImageField(upload_to = "media/images", null=True)
+    slug = models.CharField(max_length=255, null=True)
     
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -17,7 +19,10 @@ class Category(models.Model):
 class Product(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField(upload_to = "images/", null=True)
+    image = models.ImageField(upload_to = "media/images", null=True)
+    slug = models.CharField(max_length=255, null=True)
+    price = models.FloatField(default=5000)
+    is_active = models.BooleanField(default=True)
       
 
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
