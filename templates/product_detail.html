@@ -99,7 +99,12 @@
 									<img src="{% get_media_prefix %}{{product.image}}" class="img-responsive gallery-img" alt="">
 									<div class="gallery-des">
 										<h3>{{product.title}}</h3>
-										<h5>{{product.description}}</h5>
+										<h5>{{product.description|truncatechars:50}}</h5>
+										<h6>narxi : {{product.price}}</h6>
+										<button href="#" type="submit"  class="btn  btn-primary"> 
+											<i class="fas fa-shopping-cart"></i> 
+											<span class="text">Sotib olish</span> 
+										</button>
 									</div>
 								</div>
 							</a>
@@ -123,6 +128,11 @@
 	<!-- end gallery -->
 
 	<!-- start contact -->
+	<!-- <form  action="#" method="get">
+		<div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+			<button name="k" type="submit" class="form-control" id="submit">Buyurtma berish</button>
+		</div>
+	</form> -->
 	<section id="contact" class="templatemo-section">
 		<div class="container">
 			<div class="row">
