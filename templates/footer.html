@@ -1,0 +1,79 @@
+{% load static %}
+<!-- start contact -->
+<section id="contact" class="templatemo-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-uppercase text-center">Contact Us</h2>
+                <hr>
+            </div>
+            <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <form action="" method="post" >
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                            <input name="submit" type="submit" class="form-control" id="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4 col-sm-4">
+                <h3 class="padding-bottom-10 text-uppercase">Visit our shop</h3>
+                <p><i class="fa fa-map-marker contact-fa"></i> 63 Another Walking Street, BKK 18080</p>
+                <p>
+                    <i class="fa fa-phone contact-fa"></i> 
+                    <a href="tel:010-020-0340" class="contact-link">010-020-0340</a>, 
+                    <a href="tel:080-090-0660" class="contact-link">080-090-0660</a>
+                </p>			
+                <p><i class="fa fa-envelope-o contact-fa"></i> 
+                    <a href="mailto:hello@company.com" class="contact-link">hello@company.com</a></p>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <h3 class="text-uppercase">Opening hours</h3>
+                <p><i class="fa fa-clock-o contact-fa"></i> 7:00 AM - 11:00 PM</p>
+                <p><i class="fa fa-bell-o contact-fa"></i> Monday to Friday and Sunday</p>
+                <p><i class="fa fa-download contact-fa"></i> 
+                    <a class="contact-link" rel="nofollow" 
+                        href="http://fontawesome.io/icons/" target="_blank">Change Icons</a></p>
+              </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="google_map">
+                    <div id="map-canvas" class="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end contact -->
+
+<!-- start footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Copyright &copy; 2084 Company Name</p>
+                <hr>
+                <ul class="social-icon">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <li><a href="#" class="fa fa-github"></a></li>
+                    <li><a href="#" class="fa fa-apple"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>
