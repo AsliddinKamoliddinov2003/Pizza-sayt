@@ -1,0 +1,58 @@
+{% extends 'account/base.html' %}
+
+{% load static %}
+
+
+{% block MAIN %}
+
+<div class="container my-4">
+    <div class="row">
+        <div class="col-4 offset-4">
+            <div class="card mb-4">
+                <article class="card-body">
+                    <header class="mb-4">
+                        <h4 class="card-title">Contact</h4>
+                    </header>
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        
+                        <div class="col form-group">
+                            <label></label>
+                        </div>
+
+                        <div class="col form-group">
+                            <h4>{{form.name.label}}</h4>
+                            {{form.name}}
+                        </div>
+                        <div class="col form-group">
+                            <label>{{form.surname.label}}</label>
+                            {{form.surname}}
+                        </div>
+                        <div class="col form-group">
+                            <label>{{form.gmail.label}}</label>
+                            {{form.gmail}}
+                        </div>
+                        <div class="col form-group">
+                            <label>{{form.phone_number.label}}</label>
+                            {{form.phone_number}}
+                        </div>
+
+                        <div class="col form-group">
+                            <label>{{form.message.label}}</label>
+                            {{form.message}}
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Send</button>
+                        </div>                              
+                    </form>
+                    <hr>
+                    <span style="color: red; text-align: center;">{{form.errors}}</span>
+                    <p class="text-center">Have an account? <a href="">Log In</a></p>
+                </article> <!-- card-body end .// -->
+            </div> <!-- card.// -->
+        </div>
+    </div>
+</div>
+
+{% endblock MAIN %}

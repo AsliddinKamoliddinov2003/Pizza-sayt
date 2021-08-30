@@ -41,21 +41,23 @@
 					<span class="icon icon-bar"></span>
 					<span class="icon icon-bar"></span>
 				</button>
-				<a href="#home" class="navbar-brand smoothScroll"><strong>PIZZA</strong></a>
+				<a href="{% url 'bosh-sahifa' %}" class="navbar-brand smoothScroll"><strong>PIZZA</strong></a>
 			</div>
 			<div class="nav-link">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home" class="nav-link">HOME</a></li>
-					<li><a href="#about" class="nav-link">ABOUT</a></li>
-					<li><a href="#gallery" class="nav-link">CATEGORIES</a></li>
-					<li><a href="{% url 'contact' %}" class="nav-link">CONTACT</a></li>
+					<li><a href="{% url 'bosh-sahifa' %}" class="nav-link">HOME</a></li>
+					<li><a href="{% url 'login-user' %}" class="nav-link">Login</a></li>
+					<li><a href="{% url 'register' %}" class="nav-link">Registration</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- end navigation -->
-    {% block main %}
-    {% endblock main %}
+    {% block MAIN %}
+    {% endblock MAIN %}
+
+
+
 
 
     {% include 'footer.html' %}

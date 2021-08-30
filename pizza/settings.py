@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'store',
     'forms',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -41,6 +42,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'pizza.urls'
+
 
 
 TEMPLATES = [
