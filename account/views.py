@@ -43,8 +43,8 @@ def login_user(request):
     if request.method == "POST":
         form = UserLoginForm(request.POST)
         if form.is_valid():
-            gmail = form['gmail']
-            password = form['password']
+            gmail = form.cleaned_data['gmail']
+            password = form.cleaned_data['password']
 
             user = authenticate(request, gmail=gmail, password=password)
 
@@ -65,14 +65,25 @@ def login_user(request):
 
     
 
-# def all_contact(request):
-#     contacts = Contact.objects.all()
+def all_contact(request):
+    contacts = Contact.objects.all()
 
-#     context = {
-#         "contacts":contacts
-#     }
+    context = {
+        "contacts":contacts
+    }
 
-#     return render(request, "account/client.html", context)
+    return render(request, "account/client.html", context)
+
+
+def delete_contact(request, pk):
+    try:
+        contact  = Contact.objects.get(id=pk)
+        contact.delete()
+    except Contact.DoesNotExist:
+        pass
+    return redirect(reverse('all-contacts'))
+
+
 
 
         

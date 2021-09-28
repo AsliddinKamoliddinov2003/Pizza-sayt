@@ -1,0 +1,428 @@
+[
+    {
+        "model": "forms.category",
+        "pk": 25,
+        "fields": {
+            "name": "lavash",
+            "icon": "media/images/Lavash_icons.jfif",
+            "slug": "lavash",
+            "created_at": "2021-08-20T19:24:57.867Z",
+            "updated_at": "2021-08-21T11:51:50.570Z"
+        }
+    },
+    {
+        "model": "forms.category",
+        "pk": 26,
+        "fields": {
+            "name": "Hot Dog",
+            "icon": "media/images/Hot_Dog_icon.jfif",
+            "slug": "hot-dog",
+            "created_at": "2021-08-20T19:25:14.409Z",
+            "updated_at": "2021-08-21T12:06:02.457Z"
+        }
+    },
+    {
+        "model": "forms.category",
+        "pk": 27,
+        "fields": {
+            "name": "drinks",
+            "icon": "media/images/drincksicon.jfif",
+            "slug": "drinks",
+            "created_at": "2021-08-20T19:25:28.284Z",
+            "updated_at": "2021-08-21T12:05:37.690Z"
+        }
+    },
+    {
+        "model": "forms.category",
+        "pk": 30,
+        "fields": {
+            "name": "Desert",
+            "icon": "media/images/desert.jfif",
+            "slug": "desert",
+            "created_at": "2021-08-21T12:08:54.725Z",
+            "updated_at": "2021-08-21T12:08:54.726Z"
+        }
+    },
+    {
+        "model": "forms.category",
+        "pk": 33,
+        "fields": {
+            "name": "Pizza",
+            "icon": "media/images/pizza_icon_VS57wpr.jfif",
+            "slug": "pizza",
+            "created_at": "2021-08-21T12:10:51.902Z",
+            "updated_at": "2021-08-21T12:56:55.456Z"
+        }
+    },
+    {
+        "model": "forms.category",
+        "pk": 34,
+        "fields": {
+            "name": "lavash yengil",
+            "icon": "media/images/lavash_2_2L0pGcH.jfif",
+            "slug": "lavash-yengil",
+            "created_at": "2021-08-30T19:40:56.063Z",
+            "updated_at": "2021-08-30T19:40:56.063Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 16,
+        "fields": {
+            "title": "Yunoncha Pizza",
+            "description": "as roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a trea",
+            "image": "media/images/pizza_yunun_usuli.jpg",
+            "slug": "yunoncha-pizza",
+            "price": 50000.0,
+            "is_active": true,
+            "category": 33,
+            "created_at": "2021-08-21T12:13:43.796Z",
+            "updated_at": "2021-08-21T12:13:43.796Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 17,
+        "fields": {
+            "title": "Kaliforniya pizzasi",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator o",
+            "image": "media/images/pizza__koliforniya.jpg",
+            "slug": "kaliforniya-pizzasi",
+            "price": 65000.0,
+            "is_active": true,
+            "category": 33,
+            "created_at": "2021-08-21T12:15:48.023Z",
+            "updated_at": "2021-08-21T12:15:48.023Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 18,
+        "fields": {
+            "title": "Kolbasali pizza",
+            "description": "n the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+            "image": "media/images/pizza_kolbasa_rYY0mDk.jpg",
+            "slug": "kolbasali-pizza",
+            "price": 45000.0,
+            "is_active": true,
+            "category": 33,
+            "created_at": "2021-08-21T12:16:28.206Z",
+            "updated_at": "2021-08-21T12:16:28.206Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 19,
+        "fields": {
+            "title": "Pizza margarita",
+            "description": "n the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.n the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+            "image": "media/images/pizza_margarita.jpg",
+            "slug": "pizza-margarita",
+            "price": 85000.0,
+            "is_active": true,
+            "category": 33,
+            "created_at": "2021-08-21T12:17:15.342Z",
+            "updated_at": "2021-08-21T12:17:15.342Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 20,
+        "fields": {
+            "title": "Salatli pizza",
+            "description": "n the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.n the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+            "image": "media/images/pizza_salat.jpg",
+            "slug": "salatli-pizza",
+            "price": 57000.0,
+            "is_active": true,
+            "category": 33,
+            "created_at": "2021-08-21T12:17:53.027Z",
+            "updated_at": "2021-08-21T12:17:53.027Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 21,
+        "fields": {
+            "title": "chikago pizzasi",
+            "description": "n the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.n the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+            "image": "media/images/pizza_chikago_chuqur_piyola.jpg",
+            "slug": "chikago-pizzasi",
+            "price": 72000.0,
+            "is_active": true,
+            "category": 33,
+            "created_at": "2021-08-21T12:18:41.173Z",
+            "updated_at": "2021-08-21T12:18:41.173Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 22,
+        "fields": {
+            "title": "lavash pishloqli",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/lavash.jfif",
+            "slug": "lavash-pishloqli",
+            "price": 12000.0,
+            "is_active": true,
+            "category": 25,
+            "created_at": "2021-08-21T12:36:34.930Z",
+            "updated_at": "2021-08-21T12:36:34.930Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 23,
+        "fields": {
+            "title": "lavash go'shtli",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/lavash_2.jfif",
+            "slug": "lavash-goshtli",
+            "price": 24999.0,
+            "is_active": true,
+            "category": 25,
+            "created_at": "2021-08-21T12:37:15.824Z",
+            "updated_at": "2021-08-21T12:37:15.824Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 24,
+        "fields": {
+            "title": "Lavash mini",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/lavash_3.jfif",
+            "slug": "lavash-mini",
+            "price": 16000.0,
+            "is_active": true,
+            "category": 25,
+            "created_at": "2021-08-21T12:37:37.242Z",
+            "updated_at": "2021-08-21T12:37:37.242Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 25,
+        "fields": {
+            "title": "shaurma",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/shaurman_2.jfif",
+            "slug": "shaurma",
+            "price": 35000.0,
+            "is_active": true,
+            "category": 25,
+            "created_at": "2021-08-21T12:38:26.234Z",
+            "updated_at": "2021-08-21T12:38:26.234Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 26,
+        "fields": {
+            "title": "shaurman pishloqli",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/shaurman_2_oHgrhl4.jfif",
+            "slug": "shaurman-pishloqli",
+            "price": 25000.0,
+            "is_active": true,
+            "category": 25,
+            "created_at": "2021-08-21T12:38:54.392Z",
+            "updated_at": "2021-08-21T12:38:54.392Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 27,
+        "fields": {
+            "title": "hot dog sasiskali",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/hot_dog_1.jfif",
+            "slug": "hot-dog-sasiskali",
+            "price": 17000.0,
+            "is_active": true,
+            "category": 26,
+            "created_at": "2021-08-21T12:39:50.536Z",
+            "updated_at": "2021-08-21T12:39:50.536Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 28,
+        "fields": {
+            "title": "hot dog free",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/hot_dog_3.jfif",
+            "slug": "hot-dog-free",
+            "price": 35000.0,
+            "is_active": true,
+            "category": 26,
+            "created_at": "2021-08-21T12:40:23.087Z",
+            "updated_at": "2021-08-21T12:40:23.087Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 29,
+        "fields": {
+            "title": "hot dog",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/hot_doh_4.jfif",
+            "slug": "hot-dog",
+            "price": 24000.0,
+            "is_active": true,
+            "category": 26,
+            "created_at": "2021-08-21T12:40:47.306Z",
+            "updated_at": "2021-08-21T12:40:47.306Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 30,
+        "fields": {
+            "title": "desert",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/desert_2.jfif",
+            "slug": "desert",
+            "price": 5000.0,
+            "is_active": true,
+            "category": 30,
+            "created_at": "2021-08-21T12:43:23.663Z",
+            "updated_at": "2021-08-21T12:43:23.663Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 31,
+        "fields": {
+            "title": "derert pkm",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/desert_5.jfif",
+            "slug": "derert-pkm",
+            "price": 50210.0,
+            "is_active": true,
+            "category": 30,
+            "created_at": "2021-08-21T12:44:03.803Z",
+            "updated_at": "2021-08-21T12:44:03.803Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 32,
+        "fields": {
+            "title": "tort",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/desert_6.jfif",
+            "slug": "tort",
+            "price": 15000.0,
+            "is_active": true,
+            "category": 30,
+            "created_at": "2021-08-21T12:44:33.375Z",
+            "updated_at": "2021-08-21T12:44:33.375Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 33,
+        "fields": {
+            "title": "coca-cola 0.5L",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/coca_cola_0.5L.jfif",
+            "slug": "coca-cola-05l",
+            "price": 5000.0,
+            "is_active": true,
+            "category": 27,
+            "created_at": "2021-08-21T12:45:36.994Z",
+            "updated_at": "2021-08-21T12:45:36.994Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 34,
+        "fields": {
+            "title": "Fanta",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/fanta_2L.jfif",
+            "slug": "fanta",
+            "price": 5000.0,
+            "is_active": true,
+            "category": 27,
+            "created_at": "2021-08-21T12:45:53.811Z",
+            "updated_at": "2021-08-21T12:45:53.811Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 35,
+        "fields": {
+            "title": "pepsi",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/pepsi_2L.jfif",
+            "slug": "pepsi",
+            "price": 5000.0,
+            "is_active": true,
+            "category": 27,
+            "created_at": "2021-08-21T12:46:18.274Z",
+            "updated_at": "2021-08-21T12:46:18.274Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 36,
+        "fields": {
+            "title": "tip top",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/tip_top_gilos.jfif",
+            "slug": "tip-top",
+            "price": 25000.0,
+            "is_active": true,
+            "category": 27,
+            "created_at": "2021-08-21T12:46:40.746Z",
+            "updated_at": "2021-08-21T12:46:40.746Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 37,
+        "fields": {
+            "title": "coca-cola mini",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/cola_mini.jfif",
+            "slug": "coca-cola-mini",
+            "price": 5000.0,
+            "is_active": true,
+            "category": 27,
+            "created_at": "2021-08-21T12:47:02.449Z",
+            "updated_at": "2021-08-21T12:47:02.449Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 38,
+        "fields": {
+            "title": "pepsi mini",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/fanta_mini2.jfif",
+            "slug": "pepsi-mini",
+            "price": 9000.0,
+            "is_active": true,
+            "category": 27,
+            "created_at": "2021-08-21T12:47:26.897Z",
+            "updated_at": "2021-08-21T12:47:26.897Z"
+        }
+    },
+    {
+        "model": "forms.product",
+        "pk": 39,
+        "fields": {
+            "title": "Fanta mini",
+            "description": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by",
+            "image": "media/images/fanta_mini.jfif",
+            "slug": "fanta-mini",
+            "price": 5000.0,
+            "is_active": true,
+            "category": 27,
+            "created_at": "2021-08-21T12:47:53.161Z",
+            "updated_at": "2021-08-21T12:47:53.161Z"
+        }
+    }
+]

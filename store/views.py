@@ -20,10 +20,12 @@ def index_views(request):
 
 @login_required(login_url="account/login/")
 def all(request, category_slug):
+    slug = category_slug
     category = get_object_or_404(Category, slug=category_slug)
     products = Product.objects.filter(category__name = category)
     context = {
-        "products":products
+        "products":products,
+        "slug":slug
     }
     return render(request, "product_detail.html", context)
 

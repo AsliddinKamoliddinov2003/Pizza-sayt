@@ -1,4 +1,3 @@
-from django.core.files.base import ContentFile
 from forms.forms import ProductForm
 from django.shortcuts import redirect, render
 from django.urls import reverse
@@ -127,22 +126,4 @@ def delete_category(request, pk):
     return redirect(reverse('category-list'))
 
 
-# def home(request):
-#     actors = Movie.objects.all()
-#     context = {
-#         "actors":actors
-#     }
-#     return render(request, "forms/home.html", context)
-
-
-# def create_actor(request):
-#     return 
-
-
-# def update_actor(request, pk):
-#     return
-
-
-# def delete_actor(request, pk):
-#     return
 
